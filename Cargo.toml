@@ -8,4 +8,8 @@ edition = "2021"
 [dependencies]
 tch = { version = "0.13", features = ['download-libtorch'] }
 anyhow = "1.0"
+rand = "0.8"
 
+[[bin]]
+name = "translation"
+path = "src/bins/translation.rs"
