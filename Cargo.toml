@@ -9,7 +9,17 @@ edition = "2021"
 tch = { version = "0.13", features = ['download-libtorch'] }
 anyhow = "1.0"
 rand = "0.8"
+candle = {  path = "../candle/candle-core", version = "0.1.0", package = "candle-core" }
+candle-nn = { path = "../candle/candle-nn", version = "0.1.0" }
+tokenizers = { version = "0.13.4", default-features = true }
+serde = { version = "1.0.171", features = ["derive"] }
+byteorder = "1.4.3"
 
 [[bin]]
 name = "translation"
 path = "src/bins/translation.rs"
+
+
+[[bin]]
+name = "llma2"
+path = "src/bins/llma2.rs"
